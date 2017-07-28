@@ -6,12 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './homepage/homepage.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
+import { ProposalNewComponent } from './proposal/proposal-new.component';
 
 const appRoutes: Routes = [
 	{path: '', redirectTo: '/home', pathMatch:'full'},
 	{path: 'home', component: HomeComponent},
   {path: 'documents', component: DocumentsComponent},
-  {path: 'proposal', component: ProposalListComponent}
+  {path: 'proposals/new', component: ProposalNewComponent},
+  {path: 'proposals', component: ProposalListComponent}
 ];
 
 @NgModule({

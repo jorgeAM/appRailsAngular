@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './homepage/homepage.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
+import { ProposalNewComponent } from './proposal/proposal-new.component';
 
 //importamos routing
 import { AppRoutingModule } from './app.routing';
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app.routing';
     AppComponent,
     HomeComponent,
     DocumentsComponent,
-    ProposalListComponent
+    ProposalListComponent,
+    ProposalNewComponent
   ],
   imports: [
     BrowserModule,

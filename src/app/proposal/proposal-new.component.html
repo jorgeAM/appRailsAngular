@@ -1,4 +1,49 @@
 <h1>New Proposal</h1>
 <div>
+	<form #proposalForm="ngForm">
+		<div class="form-group">
+			<label for="customer">Customer Name</label>
+			<input type="text" id="customer" placeholder="ABC Company" required name="customer" [(ngModel)]="proposal.customer">
+		</div>
+
+		<div class="form-group">
+			<label for="portfolio_url">Portfolio URL</label>
+			<input type="text" id="portfolio_url" required name="portfolio_url" [(ngModel)]="proposal.portfolio_url">
+		</div>
+
+		<div class="form-group">
+			<label for="tools">Tools</label>
+			<input type="text" id="tools" placeholder="Tools" required name="tools" [(ngModel)]="proposal.tools">
+		</div>
+
+		<div class="form-group">
+			<label for="estimated_hours">Estimated hours</label>
+			<input type="number" id="estimated_hours" placeholder="number" required name="estimated_hours" [(ngModel)]="proposal.estimated_hours">
+		</div>
+
+		<div class="form-group">
+			<label for="hourly_rate">Hourly rate</label>
+			<input type="number" id="hourly_rate" placeholder="Hourly rate" required name="hourly_rate" [(ngModel)]="proposal.hourly_rate">
+		</div>
+
+		<div class="form-group">
+			<label for="weeks_to_complete">Weeks to complete</label>
+			<input type="number" id="weeks_to_complete" placeholder="number of weeks" required name="weeks_to_complete" [(ngModel)]="proposal.weeks_to_complete">
+		</div>
+
+		<div class="form-group">
+			<label for="client_email">Client Email</label>
+			<input type="email" id="client_email" placeholder="Email" required name="client_email" [(ngModel)]="proposal.client_email">
+		</div>
+	</form>
+</div>
+
+<div>
+	{{proposal.customer}}
 	{{proposal.portfolio_url}}
+	{{proposal.tools}}
+	{{proposal.estimated_hours}}
+	{{proposal.hourly_rate}}
+	{{proposal.weeks_to_complete}}
+	{{proposal.client_email}}
 </div>

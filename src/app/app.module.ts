@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //libreria para formularios
 import { FormsModule }   from '@angular/forms';
+//bootstrap para angular4
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './homepage/homepage.component';
@@ -25,7 +27,9 @@ import { AppRoutingModule } from './app.routing';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    //para ng-bootstrap
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

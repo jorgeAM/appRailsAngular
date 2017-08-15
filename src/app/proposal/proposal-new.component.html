@@ -3,7 +3,7 @@
 	<form #proposalForm="ngForm">
 		<div class="form-group">
 			<label for="customer">Customer Name</label>
-			<input type="text" class="form-control" id="customer" placeholder="ABC Company" required name="customer"
+			<input type="text" id="customer" placeholder="ABC Company" required name="customer"
 				#customer='ngModel' [(ngModel)]="proposal.customer">
 			<!--validación(pristine es del propio angular)-->
 			<div [hidden]="customer.valid || customer.pristine">

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomeComponent {
-  title = 'Hola Mundo';
+  title = 'Aplicación Angular';
 }

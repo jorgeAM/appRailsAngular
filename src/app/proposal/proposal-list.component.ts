@@ -25,10 +25,10 @@ export class ProposalListComponent implements OnInit{
 
 	ngOnInit(){
 		let timer = Observable.timer(0, 5000);
-		timer.subscribe(()=> this.getProposal());
+		timer.subscribe(()=> this.getProposals());
 	}
 
-	getProposal(){
+	getProposals(){
 		this.proposalService.getProposals()
 			.subscribe(
 				proposals => this.proposals = proposals,

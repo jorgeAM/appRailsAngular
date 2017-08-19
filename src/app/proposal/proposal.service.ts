@@ -21,6 +21,10 @@ export class ProposalService {
 				.catch(this.handleError);
 	}
 
+	getProposal(id:number){
+		return this.http.get(this.proposalUrl + '/' + id);
+	}
+
 	private handleError (error: Response | any){
     	// In a real world app, we might use a remote logging infrastructure
 	    let errMsg: string;

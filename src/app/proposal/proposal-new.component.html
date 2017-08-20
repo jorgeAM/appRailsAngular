@@ -79,6 +79,11 @@
 					[disabled]="!proposalForm.form.valid"
 					[hidden]="submitted">Crear Proposal</button>
 
+					<!--notificacion que se agrego proposal -->
+					<div class="alert alert-success" role="alert" [hidden]="!submitted">
+						Creaste ha sido generado <a class="alert-link" routerLink="/proposals">Mira todos los proposals</a>
+					</div>
+
 				</form>
 			</div>
 		</div>

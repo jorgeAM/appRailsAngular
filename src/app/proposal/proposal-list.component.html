@@ -2,7 +2,7 @@
 	<h1 class="white">Proposal list</h1>
 	<div class="list-group" *ngFor="let proposal of proposals">
 	  
-	  <a routerLink="/proposal/{{proposal.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
+	  <a (click)="goToShow(proposal)" class="list-group-item list-group-item-action flex-column align-items-start">
 	    <div class="d-flex w-100 justify-content-between">
 	      <h5 class="mb-1">{{proposal.customer}}</h5>
 	    </div>
